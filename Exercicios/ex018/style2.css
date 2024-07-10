@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Heyam';
+    src: url("Heyam.ttf") format('truetype');
+    /*
+        tipos de formato
+        - apontype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (apple advanced typography)
+        - svg
+    */
+}
+
+body {
+    font-family: 'Heyam', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
