@@ -19,8 +19,6 @@ body {
     margin: 0px;
 }
 
-
-
 header {
     background: var(--cor2);
     color: white;
@@ -54,7 +52,6 @@ main {
     margin: auto;
     min-width: none;
     max-width: 800px;
-    margin: auto;
     padding: 20px;
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
