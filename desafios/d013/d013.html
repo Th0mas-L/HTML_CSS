@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            background: url('imagens/fundo-madeira.jpg') top center no-repeat fixed;
+            background-size: cover;
+        }
+        main {
+            position: relative;
+            height: 100%;
+        }
+        section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            width: 311px;
+            height: 627px;
+            background: url('imagens/frame-iphone.png') no-repeat;
+        }
+        iframe {
+            position: relative;
+            top: 80px;
+            left: 22px;
+
+            width: 267px;
+            height: 472px;
+        }
+        ul {
+            list-style-type: none;
+            text-align: right;
+        }
+        img {
+            width: 5em;
+            height: 5em;
+            margin: 10px;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+        img:hover {
+            border: 5px solid rgba(255, 255, 255, 0.6);
+            transform: translate(-5px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <iframe id="tela" name="tela" src="pag01.html" frameborder="0" scrolling="yes"></iframe>
+        </section>
+        <ul>
+            <li>
+                <a href="pag01.html" target="tela">
+                    <img src="imagens/logo-home.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="pag02.html" target="tela">
+                    <img src="imagens/logo-facebook.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="pag03.html" target="tela">
+                    <img src="imagens/logo-github.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="pag04.html" target="tela">
+                    <img src="imagens/logo-instagram.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="pag05.html" target="tela">
+                    <img src="imagens/logo-twitter.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="pag06.html" target="tela">
+                    <img src="imagens/logo-youtube.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
