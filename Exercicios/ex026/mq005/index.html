@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media_query.css">
+</head>
+<body onresize="tamanho()">
+    <header>
+        <h1>Menu Site</h1>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Subtítulo</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, molestias ut, voluptatum saepe et, mollitia necessitatibus nesciunt autem fugit cumque praesentium. Totam vitae fugiat, quam excepturi illo temporibus porro quaerat.
+            Temporibus deserunt magnam esse numquam fugit? Aspernatur ad reprehenderit commodi mollitia doloribus error quis hic voluptatem explicabo rem, fugiat ullam facilis cumque aliquam asperiores maxime officiis adipisci eaque, blanditiis nulla.
+            Nulla ipsam minus facilis, vero, impedit nesciunt, iste exercitationem similique ut numquam at. Voluptas praesentium culpa alias sint illo quia iure, quod pariatur amet, totam nesciunt, ipsum maxime fugiat. Ab.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, molestias ut, voluptatum saepe et, mollitia necessitatibus nesciunt autem fugit cumque praesentium. Totam vitae fugiat, quam excepturi illo temporibus porro quaerat.
+            Temporibus deserunt magnam esse numquam fugit? Aspernatur ad reprehenderit commodi mollitia doloribus error quis hic voluptatem explicabo rem, fugiat ullam facilis cumque aliquam asperiores maxime officiis adipisci eaque, blanditiis nulla.
+            Nulla ipsam minus facilis, vero, impedit nesciunt, iste exercitationem similique ut numquam at. Voluptas praesentium culpa alias sint illo quia iure, quod pariatur amet, totam nesciunt, ipsum maxime fugiat. Ab.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, molestias ut, voluptatum saepe et, mollitia necessitatibus nesciunt autem fugit cumque praesentium. Totam vitae fugiat, quam excepturi illo temporibus porro quaerat.
+            Temporibus deserunt magnam esse numquam fugit? Aspernatur ad reprehenderit commodi mollitia doloribus error quis hic voluptatem explicabo rem, fugiat ullam facilis cumque aliquam asperiores maxime officiis adipisci eaque, blanditiis nulla.
+            Nulla ipsam minus facilis, vero, impedit nesciunt, iste exercitationem similique ut numquam at. Voluptas praesentium culpa alias sint illo quia iure, quod pariatur amet, totam nesciunt, ipsum maxime fugiat. Ab.</p>
+        </article>
+    </main>
+    <script>
+        function tamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none';
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = "none";
+            } 
+            else {
+                itens.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
